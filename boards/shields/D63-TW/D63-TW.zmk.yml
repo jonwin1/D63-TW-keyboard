@@ -1,0 +1,14 @@
+file_format: "1"
+id: D63-TW
+name: D63-TW
+type: shield
+url: https://jonwin.se/posts/D63-TW/
+requires:
+  - pro_micro
+exposes:
+features:
+  - keys
+  - pointer
+siblings:
+  - D63-TW_left
+  - D63-TW_right
