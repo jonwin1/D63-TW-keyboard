@@ -51,7 +51,7 @@
 //                         | LALT| LGUI| RET | ** | LGUI| XXX | XXX |
             bindings = <
 &kp F1     &kp F2        &kp F3        &kp F4        &kp F5         &kp F6                  /**/          &kp F7     &kp F8   &kp F9   &kp F10  &kp F11   &kp F12
-&bt BT_CLR &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_sel 3  &bt BT_SEL 4   &bt BT_SEL 5            /**/          &kp C_PREV &kp FSLH &kp LPAR &kp RPAR &kp STAR  &kp C_VOL_UP
+&bt BT_CLR &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &bt BT_SEL 5            /**/          &kp C_PREV &kp FSLH &kp LPAR &kp RPAR &kp STAR  &kp C_VOL_UP
 &kp ESC    &kp PSCRN     &kp LF(PSCRN) &kp SQT       &kp DQT        &kp PAUSE_BREAK         /**/          &kp C_PP   &kp BSLH &kp LBKT &kp RBKT &kp TILDE &kp C_VOL_DN
 &kp LCTRL  &kp C_AC_UNDO &kp C_AC_CUT  &kp C_AC_COPY &kp C_AC_PASTE &kp INS                 /**/          &kp C_NEXT &kp PIPE &kp LBRC &kp RBRC &kp CARET &kp C_MUTE
                          &kp C_AC_REDO &trans        &trans         &kp SPACE       &trans  /**/ &kp DEL             &KP BSPC &kp LT   &kp GT
