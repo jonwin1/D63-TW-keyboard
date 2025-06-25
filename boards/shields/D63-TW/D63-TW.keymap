@@ -33,12 +33,12 @@
 //             | HOME| END | XXX | SPC | XXX | ** | DEL |XXXXX| BSPC| PGDN| PGUP|
 //                         | LALT| LGUI| RET | ** | LGUI| XXX | XXX |
             bindings = <
-&kp LS(EQUAL) &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT         /**/          &kp AMPS  &kp FSLH  &kp LPAR  &kp RPAR  &kp EQUAL    &kp QMARK
-&kp TAB       &kp LS(Q) &kp LS(W) &kp LS(E) &kp LS(R) &kp LS(T)         /**/          &kp LS(Y) &kp LS(U) &kp LS(I) &kp LS(O) &kp LS(P)    &kp LS(LBKT)
-&kp ESC       &kp LS(A) &kp LS(S) &kp LS(D) &kp LS(F) &kp LS(G)         /**/          &kp LS(H) &kp LS(J) &kp LS(K) &kp LS(L) &kp LS(SEMI) &kp LS(SQT)
-&kp LCTRL     &kp LS(Z) &kp LS(X) &kp LS(C) &kp LS(V) &kp LS(B)         /**/          &kp LS(N) &kp LS(M) &kp SEMI  &kp COLON &kp UNDER    &kp RCTRL
-                        &kp HOME  &kp END   &trans    &kp SPACE &trans  /**/ &kp DEL            &kp BSPC  &kp PG_DN &kp PG_UP
-                                            &kp LALT  &kp LGUI  &kp RET /**/ &kp LGUI &trans    &trans
+&kp LS(EQUAL) &kp EXCL  &kp RA(N2) &kp HASH  &kp RA(N4) &kp PRCNT         /**/          &kp AMPS  &kp FSLH  &kp LPAR  &kp RPAR  &kp EQUAL    &kp QMARK
+&kp TAB       &kp LS(Q) &kp LS(W)  &kp LS(E) &kp LS(R)  &kp LS(T)         /**/          &kp LS(Y) &kp LS(U) &kp LS(I) &kp LS(O) &kp LS(P)    &kp LS(LBKT)
+&kp ESC       &kp LS(A) &kp LS(S)  &kp LS(D) &kp LS(F)  &kp LS(G)         /**/          &kp LS(H) &kp LS(J) &kp LS(K) &kp LS(L) &kp LS(SEMI) &kp LS(SQT)
+&kp LCTRL     &kp LS(Z) &kp LS(X)  &kp LS(C) &kp LS(V)  &kp LS(B)         /**/          &kp LS(N) &kp LS(M) &kp SEMI  &kp COLON &kp UNDER    &kp RCTRL
+                        &kp HOME   &kp END   &trans     &kp SPACE &trans  /**/ &kp DEL            &kp BSPC  &kp PG_DN &kp PG_UP
+                                             &kp LALT   &kp LGUI  &kp RET /**/ &kp LGUI &trans    &trans
             >;
         };
         lower_layer {
@@ -52,7 +52,7 @@
             bindings = <
 &kp F1     &kp F2        &kp F3        &kp F4        &kp F5         &kp F6                  /**/          &kp F7     &kp F8   &kp F9   &kp F10  &kp F11   &kp F12
 &bt BT_CLR &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &bt BT_SEL 5            /**/          &kp C_PREV &kp FSLH &kp LPAR &kp RPAR &kp STAR  &kp C_VOL_UP
-&kp ESC    &kp PSCRN     &kp LS(PSCRN) &kp SQT       &kp DQT        &kp PAUSE_BREAK         /**/          &kp C_PP   &kp BSLH &kp LBKT &kp RBKT &kp TILDE &kp C_VOL_DN
+&kp ESC    &kp PSCRN     &kp LS(PSCRN) &kp TILDE     &kp LS(N2)        &kp PAUSE_BREAK         /**/          &kp C_PP   &kp BSLH &kp LBKT &kp RBKT &kp TILDE &kp C_VOL_DN
 &kp LCTRL  &kp C_AC_UNDO &kp C_AC_CUT  &kp C_AC_COPY &kp C_AC_PASTE &kp INS                 /**/          &kp C_NEXT &kp PIPE &kp LBRC &kp RBRC &kp CARET &kp C_MUTE
                          &kp C_AC_REDO &trans        &trans         &kp SPACE       &trans  /**/ &kp DEL             &kp BSPC &kp LT   &kp GT
                                                      &kp LALT       &kp LGUI        &kp RET /**/ &kp LGUI &trans     &trans
