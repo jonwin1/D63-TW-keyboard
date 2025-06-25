@@ -16,4 +16,7 @@ config ZMK_SPLIT
 config ZMK_POINTING
 	default y
 
+config ZMK_SLEEP
+	default y
+
 endif
