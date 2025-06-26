@@ -37,8 +37,8 @@
 &kp TAB       &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)         /**/          &kp LS(Y)  &kp LS(U)  &kp LS(I)     &kp LS(O)      &kp LS(P)    &kp LS(LBKT)
 &kp ESC       &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)         /**/          &kp LS(H)  &kp LS(J)  &kp LS(K)     &kp LS(L)      &kp LS(SEMI) &kp LS(SQT)
 &kp LCTRL     &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)         /**/          &kp LS(N)  &kp LS(M)  &kp LS(COMMA) &kp LS(PERIOD) &kp LS(FSLH) &kp RCTRL
-                         &kp HOME   &kp END    &trans     &kp SPACE &trans  /**/ &kp LALT            &kp BSPC   &kp PG_DN     &kp PG_UP
-                                               &kp LALT   &kp LGUI  &kp RET /**/ &kp LGUI &trans     &trans
+                         &kp HOME   &kp END    &none      &kp SPACE &none   /**/ &kp LALT            &kp BSPC   &kp PG_DN     &kp PG_UP
+                                               &kp LALT   &kp LGUI  &kp RET /**/ &kp LGUI &none      &none
             >;
         };
         lower_layer {
@@ -54,8 +54,8 @@
 &bt BT_CLR &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &bt BT_SEL 5            /**/          &kp C_PREV &kp LS(N7)    &kp LS(N8) &kp LS(N9) &kp LS(NUHS)  &kp C_VOL_UP
 &kp ESC    &kp PSCRN     &kp LS(PSCRN) &kp NUHS      &kp LS(N2)     &kp PAUSE_BREAK         /**/          &kp C_PP   &kp RA(MINUS) &kp RA(N8) &kp RA(N9) &kp RA(RBKT)  &kp C_VOL_DN
 &kp LCTRL  &kp C_AC_UNDO &kp C_AC_CUT  &kp C_AC_COPY &kp C_AC_PASTE &kp INS                 /**/          &kp C_NEXT &kp RA(NUBS)  &kp RA(N7) &kp RA(N0) &kp LS(RBKT)  &kp C_MUTE
-                         &kp C_AC_REDO &trans        &trans         &kp SPACE       &trans  /**/ &kp DEL             &kp BSPC      &kp NUBS   &kp LS(NUBS)
-                                                     &kp LALT       &kp LGUI        &kp RET /**/ &kp LGUI &trans     &trans
+                         &kp C_AC_REDO &none         &none          &kp SPACE       &none   /**/ &kp DEL             &kp BSPC      &kp NUBS   &kp LS(NUBS)
+                                                     &kp LALT       &kp LGUI        &kp RET /**/ &kp LGUI &none      &none
             >;
         };
         mouse_layer {
@@ -67,12 +67,12 @@
 //             |     |     | MB3 | MB1 | MB2 | ** |     |XXXXX| MB2 |     |     |
 //                         |     |     |     | ** |     | MB1 | MB3 |
             bindings = <
-&bootloader &sys_reset &trans   &trans    &trans    &trans            /**/        &trans   &trans    &trans    &trans   &sys_reset &bootloader
-&trans      &trans     &trans   &trans    &trans    &trans            /**/        &trans   &trans    &trans    &trans   &trans     &trans
-&trans      &kp LGUI   &kp LALT &kp LCTRL &kp LSHFT &trans            /**/        &trans   &kp RSHFT &kp RCTRL &kp RALT &kp RGUI   &trans
-&trans      &trans     &trans   &trans    &trans    &trans            /**/        &trans   &trans    &trans    &trans   &trans     &trans
-                       &trans   &trans    &mkp MB3  &mkp MB1 &mkp MB2 /**/ &trans          &mkp MB2  &trans    &trans
-                                          &trans    &trans   &trans   /**/ &trans &mkp MB1 &mkp MB3
+&bootloader &sys_reset &none    &none     &none     &none             /**/        &none    &none     &none     &none    &sys_reset &bootloader
+&none       &none      &none    &none     &none     &none             /**/        &none    &none     &none     &none    &none      &none
+&none       &kp LGUI   &kp LALT &kp LCTRL &kp LSHFT &none             /**/        &none    &kp RSHFT &kp RCTRL &kp RALT &kp RGUI   &none
+&none       &none      &none    &none     &none     &none             /**/        &none    &none     &none     &none    &none      &none
+                       &none    &none     &mkp MB3  &mkp MB1 &mkp MB2 /**/ &none           &mkp MB2  &none     &none
+                                          &none     &none    &none    /**/ &none  &mkp MB1 &mkp MB3
             >;
         };
     };
