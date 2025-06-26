@@ -13,14 +13,14 @@
 // | TAB |  q  |  w  |  e  |  r  |  t  |       **       |  y  |  u  |  i  |  o  |  p  |  å  |
 // | ESC |  a  |  s  |  d  |  f  |  g  |       **       |  j  |  k  |  k  |  l  |  ö  |  ä  |
 // | LCTL| z(M)|  x  |  c  |  v  |  b  |       **       |  n  |  m  |  ,  |  .  | -(M)| RCTL|
-//             | LFT | RGT | LWR | SPC | RSE | ** | DEL |XXXXX| BSPC| DWN | UP  |
+//             | LFT | RGT | LWR | SPC | RSE | ** | LALT|XXXXX| BSPC| DWN | UP  |
 //                         | LALT| LGUI| RET | ** | LGUI| RSE | LWR |
             bindings = <
 &kp EQUAL &kp N1   &kp N2   &kp N3    &kp N4   &kp N5            /**/          &kp N6 &kp N7   &kp N8    &kp N9     &kp N0     &kp MINUS
 &kp TAB   &kp Q    &kp W    &kp E     &kp R    &kp T             /**/          &kp Y  &kp U    &kp I     &kp O      &kp P      &kp LBKT
 &kp ESC   &kp A    &kp S    &kp D     &kp F    &kp G             /**/          &kp H  &kp J    &kp K     &kp L      &kp SEMI   &kp SQT
 &kp LCTRL &lt 3 Z  &kp X    &kp C     &kp V    &kp B             /**/          &kp N  &kp M    &kp COMMA &kp PERIOD &lt 3 FSLH &kp RCTRL
-                   &kp LEFT &kp RIGHT &mo 2    &kp SPACE &mo 1   /**/ &kp DEL         &kp BSPC &kp DOWN  &kp UP
+                   &kp LEFT &kp RIGHT &mo 2    &kp SPACE &mo 1   /**/ &kp LALT        &kp BSPC &kp DOWN  &kp UP
                                       &kp LALT &kp LGUI  &kp RET /**/ &kp LGUI &mo 1  &mo 2
             >;
         };
@@ -30,15 +30,15 @@
 // | TAB |  Q  |  W  |  E  |  R  |  T  |       **       |  Y  |  U  |  I  |  O  |  P  |  Å  |
 // | ESC |  A  |  S  |  D  |  F  |  G  |       **       |  H  |  J  |  K  |  L  |  Ö  |  Ä  |
 // | LCTL|  Z  |  X  |  C  |  V  |  B  |       **       |  N  |  M  |  ;  |  :  |  _  | RCTL|
-//             | HOME| END | XXX | SPC | XXX | ** | DEL |XXXXX| BSPC| PGDN| PGUP|
+//             | HOME| END | XXX | SPC | XXX | ** | LALT|XXXXX| BSPC| PGDN| PGUP|
 //                         | LALT| LGUI| RET | ** | LGUI| XXX | XXX |
             bindings = <
-&kp LS(EQUAL) &kp EXCL  &kp RA(N2) &kp HASH  &kp RA(N4) &kp PRCNT         /**/          &kp AMPS  &kp FSLH  &kp LPAR  &kp RPAR  &kp EQUAL    &kp QMARK
-&kp TAB       &kp LS(Q) &kp LS(W)  &kp LS(E) &kp LS(R)  &kp LS(T)         /**/          &kp LS(Y) &kp LS(U) &kp LS(I) &kp LS(O) &kp LS(P)    &kp LS(LBKT)
-&kp ESC       &kp LS(A) &kp LS(S)  &kp LS(D) &kp LS(F)  &kp LS(G)         /**/          &kp LS(H) &kp LS(J) &kp LS(K) &kp LS(L) &kp LS(SEMI) &kp LS(SQT)
-&kp LCTRL     &kp LS(Z) &kp LS(X)  &kp LS(C) &kp LS(V)  &kp LS(B)         /**/          &kp LS(N) &kp LS(M) &kp SEMI  &kp COLON &kp UNDER    &kp RCTRL
-                        &kp HOME   &kp END   &trans     &kp SPACE &trans  /**/ &kp DEL            &kp BSPC  &kp PG_DN &kp PG_UP
-                                             &kp LALT   &kp LGUI  &kp RET /**/ &kp LGUI &trans    &trans
+&kp LS(EQUAL) &kp LS(N1) &kp RA(N2) &kp LS(N3) &kp RA(N4) &kp LS(N5)        /**/          &kp LS(N6) &kp LS(N7) &kp LS(N8)    &kp LS(N9)     &kp LS(N0)   &kp LS(MINUS)
+&kp TAB       &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)         /**/          &kp LS(Y)  &kp LS(U)  &kp LS(I)     &kp LS(O)      &kp LS(P)    &kp LS(LBKT)
+&kp ESC       &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)         /**/          &kp LS(H)  &kp LS(J)  &kp LS(K)     &kp LS(L)      &kp LS(SEMI) &kp LS(SQT)
+&kp LCTRL     &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)         /**/          &kp LS(N)  &kp LS(M)  &kp LS(COMMA) &kp LS(PERIOD) &kp LS(FSLH) &kp RCTRL
+                         &kp HOME   &kp END    &trans     &kp SPACE &trans  /**/ &kp LALT            &kp BSPC   &kp PG_DN     &kp PG_UP
+                                               &kp LALT   &kp LGUI  &kp RET /**/ &kp LGUI &trans     &trans
             >;
         };
         lower_layer {
@@ -50,11 +50,11 @@
 //             | REDO|     | XXX | SPC | XXX | ** | DEL |XXXXX| BSPC|  <  |  >  |
 //                         | LALT| LGUI| RET | ** | LGUI| XXX | XXX |
             bindings = <
-&kp F1     &kp F2        &kp F3        &kp F4        &kp F5         &kp F6                  /**/          &kp F7     &kp F8   &kp F9   &kp F10  &kp F11   &kp F12
-&bt BT_CLR &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &bt BT_SEL 5            /**/          &kp C_PREV &kp FSLH &kp LPAR &kp RPAR &kp STAR  &kp C_VOL_UP
-&kp ESC    &kp PSCRN     &kp LS(PSCRN) &kp NUHS     &kp LS(N2)        &kp PAUSE_BREAK         /**/          &kp C_PP   &kp BSLH &kp LBKT &kp RBKT &kp TILDE &kp C_VOL_DN
-&kp LCTRL  &kp C_AC_UNDO &kp C_AC_CUT  &kp C_AC_COPY &kp C_AC_PASTE &kp INS                 /**/          &kp C_NEXT &kp PIPE &kp LBRC &kp RBRC &kp CARET &kp C_MUTE
-                         &kp C_AC_REDO &trans        &trans         &kp SPACE       &trans  /**/ &kp DEL             &kp BSPC &kp LT   &kp GT
+&kp F1     &kp F2        &kp F3        &kp F4        &kp F5         &kp F6                  /**/          &kp F7     &kp F8        &kp F9     &kp F10    &kp F11       &kp F12
+&bt BT_CLR &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &bt BT_SEL 5            /**/          &kp C_PREV &kp LS(N7)    &kp LS(N8) &kp LS(N9) &kp LS(NUHS)  &kp C_VOL_UP
+&kp ESC    &kp PSCRN     &kp LS(PSCRN) &kp NUHS      &kp LS(N2)     &kp PAUSE_BREAK         /**/          &kp C_PP   &kp RA(MINUS) &kp RA(N8) &kp RA(N9) &kp RA(RBKT)  &kp C_VOL_DN
+&kp LCTRL  &kp C_AC_UNDO &kp C_AC_CUT  &kp C_AC_COPY &kp C_AC_PASTE &kp INS                 /**/          &kp C_NEXT &kp RA(NUBS)  &kp RA(N7) &kp RA(N0) &kp LS(RBKT)  &kp C_MUTE
+                         &kp C_AC_REDO &trans        &trans         &kp SPACE       &trans  /**/ &kp DEL             &kp BSPC      &kp NUBS   &kp LS(NUBS)
                                                      &kp LALT       &kp LGUI        &kp RET /**/ &kp LGUI &trans     &trans
             >;
         };
