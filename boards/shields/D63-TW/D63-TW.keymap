@@ -17,22 +17,22 @@
 // | ESC |  a  |  s  |  d  |  f  |  g  |       **       |  j  |  k  |  k  |  l  |  ö  |  ä  |
 // |LCTRL| z(M)|  x  |  c  |  v  |  b  |       **       |  n  |  m  |  ,  |  .  | -(M)|RCTRL|
 //             |  '  |  "  |LAYER| SPC | RET | ** | LALT|XXXXX|LAYER|  {  |  }  |
-//                         | LALT| LGUI| LSFT| ** | RSFT| LGUI| BSPC|
+//                         | LALT| LGUI| LSFT| ** | LGUI| RSFT| BSPC|
             bindings = <
 &kp SV_ACUTE &kp SV_N1   &kp SV_N2   &kp SV_N3    &kp SV_N4   &kp SV_N5             /**/          &kp SV_N6   &kp SV_N7   &kp SV_N8    &kp SV_N9     &kp SV_N0       &kp SV_PLUS
 &kp TAB      &kp SV_Q    &kp SV_W    &kp SV_E     &kp SV_R    &kp SV_T              /**/          &kp SV_Y    &kp SV_U    &kp SV_I     &kp SV_O      &kp SV_P        &kp SV_A_RING
 &kp ESC      &kp SV_A    &kp SV_S    &kp SV_D     &kp SV_F    &kp SV_G              /**/          &kp SV_H    &kp SV_J    &kp SV_K     &kp SV_L      &kp SV_A_UMLAUT &kp SV_O_UMLAUT
 &kp LCTRL    &lt 2 SV_Z  &kp SV_X    &kp SV_C     &kp SV_V    &kp SV_B              /**/          &kp SV_N    &kp SV_M    &kp SV_COMMA &kp SV_PERIOD &lt 2 SV_MINUS  &kp RCTRL
-                         &kp SV_SQT  &kp SV_DQT   &mo 1       &kp SV_SPACE &kp RET  /**/ &kp LALT             &mo 1       &kp SV_LBRC  &kp SV_RBRC
-                                                  &kp LALT    &kp LGUI     &kp LSFT /**/ &kp RSFT    &kp LGUI &kp BSPC
+                         &kp SV_SQT  &kp SV_DQT   &mo 1       &kp SV_SPACE &kp RET  /**/ &kp LALT             &mo 1       &kp SV_LBKT  &kp SV_RBKT
+                                                  &kp LALT    &kp LGUI     &kp LSFT /**/ &kp LGUI &kp RSFT &kp BSPC
             >;
         };
         other_layer {
 // -----------------------------------------------------------------------------------------
 // | F1  | F2  | F3  | F4  | F5  | F6  |       **       | F7  | F8  | F9  | F10 | F11 | F12 |
 // |BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |       **       |     |     |     |     | PREV| VUP |
-// | ESC |PRTSC|prtsc|     |     |PAUSE|       **       | LEFT| DOWN| UP  |RIGHT|PAUSE| VDN |
-// | LCTL|     |     |     |     | INS |       **       |     |     |     |     | NEXT| MUTE|
+// | ESC |PRTSC|prtsc|     |     |PAUSE|       **       | LEFT| DOWN| UP  |RIGHT|PAUSE| MUTE|
+// | LCTL|     |     |     |     | INS |       **       |     |     |     |     | NEXT| VDN |
 //             |     |     | XXX | SPC | RET | ** | LALT|XXXXX| XXX |     |     |
 //                         | LALT| LGUI| LSFT| ** | RSFT| LGUI| DEL |
             bindings = <
