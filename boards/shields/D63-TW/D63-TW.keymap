@@ -8,13 +8,13 @@
 
 / {
     behaviors {
-        lbrc_lbkt : lbrc_lbkt {
+        lbrc_lbkt: lbrc_lbkt {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SV_LBRC>, <&kp SV_RBKT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        rbrc_rbkt : rbrc_rbkt {
+        rbrc_rbkt: rbrc_rbkt {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SV_RBRC>, <&kp SV_RBKT>;
