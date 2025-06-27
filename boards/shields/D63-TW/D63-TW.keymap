@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
 
-            // home end pgup pgdn @ $ left right up down
+            // home end pgup pgdn @ $ left right up down / * \ [ ] ~ | { } ^ < >
 
 / {
     keymap {
@@ -30,9 +30,9 @@
         other_layer {
 // -----------------------------------------------------------------------------------------
 // | F1  | F2  | F3  | F4  | F5  | F6  |       **       | F7  | F8  | F9  | F10 | F11 | F12 |
-// |BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |       **       | PREV|  \  |  [  |  ]  |  *  | VUP |
-// | ESC |PRTSC|prtsc|     |     |PAUSE|       **       |PAUSE|  |  |  {  |  }  |  ~  | VDN |
-// | LCTL|     |     |     |     | INS |       **       | NEXT|  ^  |  <  |  >  |  $  | MUTE|
+// |BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |       **       |     |     |     |     | PREV| VUP |
+// | ESC |PRTSC|prtsc|     |     |PAUSE|       **       | LEFT| DOWN| UP  |RIGHT|PAUSE| VDN |
+// | LCTL|     |     |     |     | INS |       **       |     |     |     |     | NEXT| MUTE|
 //             |     |     | XXX | SPC | RET | ** | LALT|XXXXX| XXX |     |     |
 //                         | LALT| LGUI| LSFT| ** | RSFT| LGUI| DEL |
             bindings = <
