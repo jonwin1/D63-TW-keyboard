@@ -41,22 +41,22 @@
 // | TAB |  q  |  w  |  e  |  r  |  t  |       **       |  y  |  u  |  i  |  o  |  p  |  å  |
 // | ESC |  a  |  s  |  d  |  f  |  g  |       **       |  h  |  j  |  k  |  l  |  ö  |  ä  |
 // |LCTRL| z(M)|  x  |  c  |  v  |  b  |       **       |  n  |  m  |  ,  |  .  | -(M)|RCTRL|
-//             |  '  |  "  |LAYER| SPC | RET | ** | LALT|XXXXX|LAYER|  {  |  }  |
-//                         | LALT| LGUI| LSFT| ** | LGUI| RSFT| BSPC|
+//             |  '  |  "  |LAYER| SPC | RET | ** | LALT|XXXXX| BSPC|  {  |  }  |
+//                         | LALT| LGUI| LSFT| ** |LAYER| LGUI| RSFT|
 // With Shift
 // |  `  |  !  |  "  |  #  |  ¤  |  %  |       **       |  &  |  /  |  (  |  )  |  =  |  ?  |
 // | TAB |  Q  |  W  |  E  |  R  |  T  |       **       |  Y  |  U  |  I  |  O  |  P  |  Å  |
 // | ESC |  A  |  S  |  D  |  F  |  G  |       **       |  H  |  J  |  K  |  L  |  Ö  |  Ä  |
 // |LCTRL| Z(M)|  X  |  C  |  V  |  B  |       **       |  N  |  M  |  ;  |  :  | _(M)|RCTRL|
-//             |  <  |  >  |LAYER| SPC | RET | ** | LALT|XXXXX|LAYER|  [  |  ]  |
-//                         | LALT| LGUI| LSFT| ** | LGUI| RSFT| BSPC|
+//             |  <  |  >  |LAYER| SPC | RET | ** | LALT|XXXXX| BSPC|  [  |  ]  |
+//                         | LALT| LGUI| LSFT| ** |LAYER| LGUI| RSFT|
             bindings = <
 &kp SV_ACUTE &kp SV_N1   &kp SV_N2   &kp SV_N3    &kp SV_N4   &kp SV_N5             /**/          &kp SV_N6   &kp SV_N7   &kp SV_N8    &kp SV_N9     &kp SV_N0       &kp SV_PLUS
 &kp TAB      &kp SV_Q    &kp SV_W    &kp SV_E     &kp SV_R    &kp SV_T              /**/          &kp SV_Y    &kp SV_U    &kp SV_I     &kp SV_O      &kp SV_P        &kp SV_A_RING
 &kp ESC      &kp SV_A    &kp SV_S    &kp SV_D     &kp SV_F    &kp SV_G              /**/          &kp SV_H    &kp SV_J    &kp SV_K     &kp SV_L      &kp SV_O_UMLAUT &kp SV_A_UMLAUT
 &kp LCTRL    &lt 2 SV_Z  &kp SV_X    &kp SV_C     &kp SV_V    &kp SV_B              /**/          &kp SV_N    &kp SV_M    &kp SV_COMMA &kp SV_PERIOD &lt 2 SV_MINUS  &kp RCTRL
-                         &sqt_lt     &dqt_gt      &mo 1       &kp SV_SPACE &kp RET  /**/ &kp LALT             &mo 1       &lbrc_lbkt   &rbrc_rbkt
-                                                  &kp LALT    &kp LGUI     &kp LSFT /**/ &kp LGUI &kp RSFT &kp BSPC
+                         &sqt_lt     &dqt_gt      &mo 1       &kp SV_SPACE &kp RET  /**/ &kp LALT             &kp BSPC    &lbrc_lbkt   &rbrc_rbkt
+                                                  &kp LALT    &kp LGUI     &kp LSFT /**/ &mo 1    &kp LGUI    &kp RSFT
             >;
         };
         other_layer {
@@ -65,15 +65,15 @@
 // |BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |       **       |     |PSCRN| PSEL|     | PREV| VUP |
 // | ESC |  *  |  ~  |  $  |  @  | PB  |       **       | LEFT| DOWN| UP  |RIGHT|PAUSE| MUTE|
 // | LCTL|     |  ^  |  |  |  \  | INS |       **       |     |     |     |     | NEXT| VDN |
-//             | HOME| END | XXX | SPC | RET | ** | LALT|XXXXX| XXX | PGUP| PGDN|
-//                         | LALT| LGUI| LSFT| ** | LGUI| RSFT| DEL |
+//             | HOME| END | XXX | SPC | RET | ** | LALT|XXXXX| DEL | PGUP| PGDN|
+//                         | LALT| LGUI| LSFT| ** | XXX | LGUI| RSFT|
             bindings = <
 &kp F1     &kp F2       &kp F3       &kp F4       &kp F5       &kp F6                   /**/          &kp F7   &kp F8    &kp F9        &kp F10   &kp F11    &kp F12
 &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5             /**/          &none    &kp PSCRN &kp LS(PSCRN) &none     &kp C_PREV &kp C_VOL_UP
 &kp ESC    &kp SV_STAR  &kp SV_TILDE &kp SV_DLLR  &kp SV_AT    &kp PAUSE_BREAK          /**/          &kp LEFT &kp DOWN  &kp UP        &kp RIGHT &kp C_PP   &kp C_MUTE
 &kp LCTRL  &none        &kp SV_CARET &kp SV_PIPE  &kp SV_BSLH  &kp INS                  /**/          &none    &none     &none         &none     &kp C_NEXT &kp C_VOL_DN
-                        &kp HOME     &kp END      &none        &kp SV_SPACE    &kp RET  /**/ &kp LALT          &none     &kp PG_UP     &kp PG_DN
-                                                    &kp LALT     &kp LGUI        &kp LSFT /**/ &kp LGUI &kp RSFT &kp DEL
+                        &kp HOME     &kp END      &none        &kp SV_SPACE    &kp RET  /**/ &kp LALT          &kp DEL   &kp PG_UP     &kp PG_DN
+                                                  &kp LALT     &kp LGUI        &kp LSFT /**/ &none    &kp LGUI &kp RSFT
             >;
         };
         mouse_layer {
