@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: joelspadin
       url-base: https://github.com/joelspadin
-    - name: inorichi
-      url-base: https://github.com/inorichi
+    - name: badjeff
+      url-base: https://github.com/badjeff
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,7 +15,7 @@ manifest:
       remote: joelspadin
       revision: main
     - name: zmk-pmw3610-driver
-      remote: inorichi
+      remote: badjeff
       revision: main
   self:
     path: config

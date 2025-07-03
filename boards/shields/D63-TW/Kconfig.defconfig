@@ -16,6 +16,9 @@ config ZMK_SPLIT
 config ZMK_POINTING
 	default y
 
+config INPUT
+	default y
+
 endif
 
 if SHIELD_D63-TW_RIGHT
