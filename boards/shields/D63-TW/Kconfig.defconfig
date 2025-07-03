@@ -16,7 +16,14 @@ config ZMK_SPLIT
 config ZMK_POINTING
 	default y
 
-config ZMK_SLEEP
+endif
+
+if SHIELD_D63-TW_RIGHT
+
+config SPI
+	default y
+
+config PMW3610
 	default y
 
 endif
