@@ -1,4 +1,4 @@
-if SHIELD_D63-TW_LEFT
+if SHIELD_D63-TW_RIGHT
 
 config ZMK_KEYBOARD_NAME
 	default "D63-TW"
@@ -14,19 +14,6 @@ config ZMK_SPLIT
 	default y
 
 config ZMK_POINTING
-	default y
-
-config INPUT
-	default y
-
-endif
-
-if SHIELD_D63-TW_RIGHT
-
-config SPI
-	default y
-
-config PMW3610
 	default y
 
 endif
