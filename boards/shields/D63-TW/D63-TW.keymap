@@ -40,16 +40,16 @@
         };
 
         /*
-         * KEY                -> 2
-         * SHIFT + KEY        -> @
-         * LGUI + SHIFT + KEY -> LGUI + SHIFT + 2
+         * KEY               -> 2
+         * SHIFT + KEY       -> @
+         * MOD + SHIFT + KEY -> MOD + SHIFT + 2
          */
         at_gs2: at_guiShiftN2 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SV_AT>, <&kp LS(SV_N2)>;
-            mods = <(MOD_LGUI)>;
-            keep-mods = <(MOD_LGUI)>;
+            mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
         n2_at: n2_at {
             compatible = "zmk,behavior-mod-morph";
@@ -59,16 +59,16 @@
         };
 
         /*
-         * KEY                -> 4
-         * SHIFT + KEY        -> $
-         * LGUI + SHIFT + KEY -> LGUI + SHIFT + 4
+         * KEY               -> 4
+         * SHIFT + KEY       -> $
+         * MOD + SHIFT + KEY -> MOD + SHIFT + 4
          */
         dllr_gs4: dollar_guiShiftN4 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SV_DLLR>, <&kp LS(SV_N4)>;
-            mods = <(MOD_LGUI)>;
-            keep-mods = <(MOD_LGUI)>;
+            mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
         n4_dllr: n4_dollar {
             compatible = "zmk,behavior-mod-morph";
