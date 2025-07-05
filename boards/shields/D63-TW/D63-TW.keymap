@@ -6,46 +6,74 @@
 
 / {
     behaviors {
-        lbrc_lbkt: lbrc_lbkt {
+        lbrc_lbkt: left_brace_bracket {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SV_LBRC>, <&kp SV_LBKT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        rbrc_rbkt: rbrc_rbkt {
+        rbrc_rbkt: right_brace_bracket {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SV_RBRC>, <&kp SV_RBKT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        sqt_lt: sqt_lt {
+
+        sqt_lt: singleQuote_lessThan {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SV_SQT>, <&kp SV_LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        dqt_gt: dqt_gt {
+        dqt_gt: dubbleQuote_greaterThan {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SV_DQT>, <&kp SV_GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        n2_at: n2_at {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp SV_N2>, <&kp SV_AT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        n4_dllr: n4_dllr {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp SV_N4>, <&kp SV_DLLR>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+
         star_tilde: star_tilde {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SV_STAR>, <&kp SV_TILDE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        /*
+         * KEY                -> 2
+         * SHIFT + KEY        -> @
+         * LGUI + SHIFT + KEY -> LGUI + SHIFT + 2
+         */
+        at_gs2: at_guiShiftN2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SV_AT>, <&kp LS(SV_N2)>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
+        n2_at: n2_at {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SV_N2>, <&at_gs2>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        /*
+         * KEY                -> 4
+         * SHIFT + KEY        -> $
+         * LGUI + SHIFT + KEY -> LGUI + SHIFT + 4
+         */
+        dllr_gs4: dollar_guiShiftN4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SV_DLLR>, <&kp LS(SV_N4)>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
+        n4_dllr: n4_dollar {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SV_N4>, <&dllr_gs4>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
