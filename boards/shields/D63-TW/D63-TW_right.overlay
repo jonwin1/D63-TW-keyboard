@@ -62,5 +62,10 @@
                 &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)
             >;
         };
+
+        slow_pointer {
+            layers = <4>;
+            input-processors = <&zip_xy_scaler 2 6>;
+        };
     };
 };
