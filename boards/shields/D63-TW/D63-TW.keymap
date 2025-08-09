@@ -140,6 +140,9 @@
             >;
         };
 
+        // Transparent layers for scrolling and slow movements with the trackball.
+        // These modes gets activated when a specific layer is active, see the
+        // trackball config file.
         scroll {
             bindings = <
 &trans &trans &trans &trans &trans &trans        /**/        &trans &trans &trans &trans &trans &trans
@@ -150,7 +153,6 @@
                             &trans &trans &trans /**/ &trans &trans &trans
             >;
         };
-
         slow {
             bindings = <
 &trans &trans &trans &trans &trans &trans        /**/        &trans &trans &trans &trans &trans &trans
