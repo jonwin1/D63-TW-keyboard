@@ -48,13 +48,18 @@
 };
 
 / {
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors = <&zip_xy_scaler 5 5>;
 
-    scroll_mode {
-      layers = <3>;
-      input-processors = <&zip_xy_to_scroll_mapper 8>;
+        scroll_mode {
+            layers = <3>;
+            input-processors = <
+                &zip_xy_scaler 1 15
+                &zip_xy_to_scroll_mapper
+                &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)
+            >;
+        };
     };
-  };
 };
