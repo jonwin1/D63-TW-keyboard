@@ -1,4 +1,6 @@
 #include "D63-TW.dtsi"
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -23,8 +25,6 @@
     };
 };
 
-#include <zephyr/dt-bindings/input/input-event-codes.h>
-
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
@@ -39,7 +39,7 @@
         reg = <0>;
         spi-max-frequency = <1000000>;
         irq-gpios = <&gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <600>;
+        cpi = <500>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -51,5 +51,10 @@
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
+
+    scroll_mode {
+      layers = <3>;
+      input-processors = <&zip_xy_to_scroll_mapper>;
+    };
   };
 };
