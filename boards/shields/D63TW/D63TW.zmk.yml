@@ -1,6 +1,6 @@
 file_format: "1"
-id: D63-TW
-name: D63-TW
+id: D63TW
+name: D63TW
 type: shield
 url: https://jonwin.se/posts/D63-TW/
 requires:
@@ -10,5 +10,5 @@ features:
   - keys
   - pointer
 siblings:
-  - D63-TW_left
-  - D63-TW_right
+  - D63TW_left
+  - D63TW_right

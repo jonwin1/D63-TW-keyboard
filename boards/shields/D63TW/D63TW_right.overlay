@@ -1,0 +1,6 @@
+#include "D63TW.dtsi"
+#include "D63TW_trackball.dtsi"
+
+&default_transform {
+    col-offset = <6>;
+};

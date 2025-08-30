@@ -13,6 +13,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: D63-TW_left
+    shield: D63TW_left
   - board: nice_nano_v2
-    shield: D63-TW_right
+    shield: D63TW_right

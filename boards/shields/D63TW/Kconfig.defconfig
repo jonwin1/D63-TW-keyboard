@@ -1,14 +1,14 @@
-if SHIELD_D63-TW_RIGHT
+if SHIELD_D63TW_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "D63-TW"
+	default "D63TW"
 
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_D63-TW_LEFT || SHIELD_D63-TW_RIGHT
+if SHIELD_D63TW_LEFT || SHIELD_D63TW_RIGHT
 
 config ZMK_SPLIT
 	default y
