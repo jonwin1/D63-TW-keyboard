@@ -85,22 +85,22 @@
 // -----------------------------------------------------------------------------------------
 // |  *  |  1  |  2  |  3  |  4  |  5  |       **       |  6  |  7  |  8  |  9  |  0  |  +  |
 // | TAB |  q  |  w  |  e  |  r  |  t  |       **       |  y  |  u  |  i  |  o  |  p  |  å  |
-// |ESC M|  a  |  s  |  d  |  f  |  g  |       **       |  h  |  j  |  k  |  l  |  ö  |  ä  |
-// |LCTRL|  z  |  x  |  c  |  v  |  b  |       **       |  n  |  m  |  ,  |  .  |  -  |RCTRL|
+// | ESC |  a  |  s  |  d  |  f  |  g  |       **       |  h  |  j  |  k  |  l  |  ö  |  ä  |
+// |LCTRL|z (M)|  x  |  c  |  v  |  b  |       **       |  n  |  m  |  ,  |  .  |- (M)|RCTRL|
 //             |  '  |  "  |LAYER| SPC | RET | ** |LAYER|XXXXX| BSPC|  {  |  }  |
 //                         | LALT| LGUI| LSFT| ** | LALT| LGUI| RSFT|
 // With Shift
 // |  ~  |  !  |  @  |  #  |  $  |  %  |       **       |  &  |  /  |  (  |  )  |  =  |  ?  |
 // | TAB |  Q  |  W  |  E  |  R  |  T  |       **       |  Y  |  U  |  I  |  O  |  P  |  Å  |
-// |ESC M|  A  |  S  |  D  |  F  |  G  |       **       |  H  |  J  |  K  |  L  |  Ö  |  Ä  |
-// |LCTRL|  Z  |  X  |  C  |  V  |  B  |       **       |  N  |  M  |  ;  |  :  |  _  |RCTRL|
+// | ESC |  A  |  S  |  D  |  F  |  G  |       **       |  H  |  J  |  K  |  L  |  Ö  |  Ä  |
+// |LCTRL|Z (M)|  X  |  C  |  V  |  B  |       **       |  N  |  M  |  ;  |  :  |_ (M)|RCTRL|
 //             |  <  |  >  |LAYER| SPC | RET | ** |LAYER|XXXXX| BSPC|  [  |  ]  |
 //                         | LALT| LGUI| LSFT| ** | LALT| LGUI| RSFT|
             bindings = <
 &star_tilde &kp SV_N1  &n2_at   &kp SV_N3 &n4_dllr &kp SV_N5             /**/          &kp SV_N6 &kp SV_N7 &kp SV_N8    &kp SV_N9     &kp SV_N0       &kp SV_PLUS
 &kp TAB     &kp SV_Q   &kp SV_W &kp SV_E  &kp SV_R &kp SV_T              /**/          &kp SV_Y  &kp SV_U  &kp SV_I     &kp SV_O      &kp SV_P        &kp SV_A_RING
-&lt 2 ESC   &kp SV_A   &kp SV_S &kp SV_D  &kp SV_F &kp SV_G              /**/          &kp SV_H  &kp SV_J  &kp SV_K     &kp SV_L      &kp SV_O_UMLAUT &kp SV_A_UMLAUT
-&kp LCTRL   &kp SV_Z   &kp SV_X &kp SV_C  &kp SV_V &kp SV_B              /**/          &kp SV_N  &kp SV_M  &kp SV_COMMA &kp SV_PERIOD &kp SV_MINUS    &kp RCTRL
+&kp ESC     &kp SV_A   &kp SV_S &kp SV_D  &kp SV_F &kp SV_G              /**/          &kp SV_H  &kp SV_J  &kp SV_K     &kp SV_L      &kp SV_O_UMLAUT &kp SV_A_UMLAUT
+&kp LCTRL   &lt 2 SV_Z &kp SV_X &kp SV_C  &kp SV_V &kp SV_B              /**/          &kp SV_N  &kp SV_M  &kp SV_COMMA &kp SV_PERIOD &lt 2 SV_MINUS  &kp RCTRL
                        &sqt_lt  &dqt_gt   &mo 1    &kp SV_SPACE &kp RET  /**/ &mo 1              &kp BSPC  &lbrc_lbkt   &rbrc_rbkt
                                           &kp LALT &kp LGUI     &kp LSFT /**/ &kp LALT &kp LGUI  &kp RSFT
             >;
@@ -126,8 +126,8 @@
 // -----------------------------------------------------------------------------------------
 // | BOOT| RST |     |     |     |     |       **       |     |     |     |     | RST | BOOT|
 // |     |     |     |     |     |     |       **       |     |     |     |     |     |     |
-// | XXX | LGUI| LALT| LCTL| LSFT|     |       **       |     | RSFT| RCTL| RALT| RGUI|     |
-// |     |     |SCROL| SLOW|     |     |       **       |     |     | SLOW|SCROL|     |     |
+// |     | LGUI| LALT| LCTL| LSFT|     |       **       |     | RSFT| RCTL| RALT| RGUI|     |
+// |     | XXX |SCROL| SLOW|     |     |       **       |     |     | SLOW|SCROL| XXX |     |
 //             |     |     | MB3 | MB1 | MB2 | ** |     |XXXXX| MB1 |     |     |
 //                         |     |     |     | ** |     | MB2 | MB3 |
             bindings = <
