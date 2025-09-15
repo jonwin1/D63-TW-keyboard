@@ -4,8 +4,7 @@ name: D63TW
 type: shield
 url: https://jonwin.se/posts/D63-TW/
 requires:
-  - pro_micro
-exposes:
+  - nice_nano_v2
 features:
   - keys
   - pointer
