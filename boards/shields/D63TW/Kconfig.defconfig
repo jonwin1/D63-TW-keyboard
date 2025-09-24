@@ -13,4 +13,7 @@ if SHIELD_D63TW_LEFT || SHIELD_D63TW_RIGHT
 config ZMK_SPLIT
 	default y
 
+config ZMK_IDLE_TIMEOUT
+	default 120000
+
 endif
