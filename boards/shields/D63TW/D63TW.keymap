@@ -97,12 +97,12 @@
 //             |  <  |  >  |LAYER| SPC | RET | ** |LAYER|XXXXX| BSPC|  [  |  ]  |
 //                         | LALT| LGUI| LSFT| ** | LALT| LGUI| RSFT|
             bindings = <
-&star_tilde &kp SV_N1  &n2_at   &kp SV_N3 &n4_dllr &kp SV_N5             /**/          &kp SV_N6 &kp SV_N7 &kp SV_N8    &kp SV_N9     &kp SV_N0       &kp SV_PLUS
-&kp TAB     &kp SV_Q   &kp SV_W &kp SV_E  &kp SV_R &kp SV_T              /**/          &kp SV_Y  &kp SV_U  &kp SV_I     &kp SV_O      &kp SV_P        &kp SV_A_RING
-&kp ESC     &kp SV_A   &kp SV_S &kp SV_D  &kp SV_F &kp SV_G              /**/          &kp SV_H  &kp SV_J  &kp SV_K     &kp SV_L      &kp SV_O_UMLAUT &kp SV_A_UMLAUT
-&kp LCTRL   &lt 2 SV_Z &kp SV_X &kp SV_C  &kp SV_V &kp SV_B              /**/          &kp SV_N  &kp SV_M  &kp SV_COMMA &kp SV_PERIOD &lt 2 SV_MINUS  &kp RCTRL
-                       &sqt_lt  &dqt_gt   &mo 1    &kp SV_SPACE &kp RET  /**/ &mo 1              &kp BSPC  &lbrc_lbkt   &rbrc_rbkt
-                                          &kp LALT &kp LGUI     &kp LSFT /**/ &kp LALT &kp LGUI  &kp RSFT
+&star_tilde &kp SV_N1     &n2_at        &kp SV_N3      &n4_dllr       &kp SV_N5             /**/          &kp SV_N6 &kp SV_N7      &kp SV_N8      &kp SV_N9     &kp SV_N0            &kp SV_PLUS
+&kp TAB     &kp SV_Q      &kp SV_W      &kp SV_E       &kp SV_R       &kp SV_T              /**/          &kp SV_Y  &kp SV_U       &kp SV_I       &kp SV_O      &kp SV_P             &kp SV_A_RING
+&kp ESC     &mt LGUI SV_A &mt LALT SV_S &mt LCTRL SV_D &mt LSHFT SV_F &kp SV_G              /**/          &kp SV_H  &mt LSHFT SV_J &mt LCTRL SV_K &mt LALT SV_L &mt LGUI SV_O_UMLAUT &kp SV_A_UMLAUT
+&kp LCTRL   &lt 2 SV_Z    &kp SV_X      &kp SV_C       &kp SV_V       &kp SV_B              /**/          &kp SV_N  &kp SV_M       &kp SV_COMMA   &kp SV_PERIOD &lt 2 SV_MINUS       &kp RCTRL
+                          &sqt_lt       &dqt_gt        &mo 1          &kp SV_SPACE &kp RET  /**/ &mo 1              &kp BSPC       &lbrc_lbkt     &rbrc_rbkt
+                                                       &kp LALT       &kp LGUI     &kp LSFT /**/ &kp LALT &kp LGUI  &kp RSFT
             >;
         };
         other_layer {
