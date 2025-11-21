@@ -2,11 +2,7 @@
 
 ~~_More to come..._~~
 
-This repository is **deprecated** and will be **replaced** by my updated design,
-the **[Andromeda Keyboard](https://github.com/jonwin1/andromeda-keyboard)**. It
-is both similar and very different, the most major differens being that I have
-extracted the trackball into a separate module instead of integrating it in the
-thumb cluster.
+**No longer maintained.** See [Andromeda Keyboard](https://github.com/jonwin1/andromeda-keyboard) for what I currently use.
 
 ---
 
